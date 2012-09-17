@@ -1,0 +1,15 @@
+#N canvas 620 219 294 262 10;
+#X obj 16 -68 netreceive 5401 1;
+#X obj 16 40 route status data;
+#X obj 16 -41 route gps cc01 play;
+#X obj 102 -13 print play;
+#X obj 16 110 print gps_status;
+#X obj 74 84 print gps_data;
+#X obj 62 13 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 1 1 5 0;
+#X connect 2 0 1 0;
+#X connect 2 1 6 0;
+#X connect 2 2 3 0;

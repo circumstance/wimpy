@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tomorrowtheground gpsdevice="/dev/ttyO0">
+	<gps>
+		<scale file="domst_grad.png" ll1="53.353241,-6.268789" ll2="53.35171,-6.266284" freq="1.0" command="cc01">
+		</scale>
+		<index file="domst_index.png" ll1="53.353241,-6.268789" ll2="53.35171,-6.266284">
+			<trigger id="251" command="index" param="synth.wav">
+			</trigger>
+			<trigger id="249" command="index" param="beat.wav">
+			</trigger>
+		</index>
+	</gps>
+	<bt freq="10">
+		<trigger id="00:1A:7D:0A:BA:C3" command="play" param="i01.wav">
+		</trigger>
+		<trigger id="50:EA:D6:A6:7F:DD" command="play" param="i02.wav">
+		</trigger>
+	</bt>
+</tomorrowtheground>

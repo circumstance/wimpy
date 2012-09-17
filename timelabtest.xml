@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tomorrowtheground gpsdevice="/dev/ttyO0">
+	<gps>
+		<scale file="TimelabTestAreaGRADIENT.png" ll1="51.043293,3.737025" ll2="51.042154,3.739584" freq="1.0" command="cc01">
+		</scale>
+	</gps>
+	<bt freq="10">
+		<trigger id="00:11:95:00:1A:CF" command="play" param="i01.wav">
+		</trigger>
+	</bt>
+</tomorrowtheground>

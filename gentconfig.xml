@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tomorrowtheground gpsdevice="/dev/ttO0">
+	<gps>
+		<index file="indexV4.gif" ll1="51.050608,3.724698" ll2="51.046878,3.732852">
+			<trigger id="01" command="play" param="b01.wav">
+			</trigger>
+			<trigger id="03" command="play" param="b02.wav">
+			</trigger>
+			<trigger id="28" command="play" param="b03.wav">
+			</trigger>
+			<trigger id="29" command="play" param="b04.wav">
+			</trigger>
+		</index>
+		<scale file="scalar01.png" ll1="51.050608,3.724698" ll2="51.046878,3.732852" freq="1.0" command="cc01">
+		</scale>
+	</gps>
+	<bt freq="10">
+		<trigger id="00:1A:7D:0A:BA:C3" command="play" param="i01.wav">
+		</trigger>
+		<trigger id="50:EA:D6:A6:7F:DD" command="play" param="i02.wav">
+		</trigger>
+	</bt>
+</tomorrowtheground>

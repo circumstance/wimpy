@@ -1,0 +1,61 @@
+wim.py - gps / bluetooth listener communicates via UDP packets
+
+Copyright (C) 2012 Tim Redfern
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser
+General Public License as published by the Free Software Foundation; either version 2.1 of the License,
+or (at your option) any later version.
+
+================================================================
+
+wim.py - gps / bluetooth listener communicates via UDP packets
+designed to interface with pure data
+(C) 2012 Tim Redfern
+
+developed exclusively for circumstance - Tomorrow the ground forgets you were here
+
+http://productofcircumstance.com/portfoliocpt/tomorrow-the-ground-forgets-you-were-here/
+
+Bugs, issues, suggestions: tim@eclectronics.org
+
+wim.py requires an xml config file - see example
+this details 3 types of triggers which are translated into UDP packets
+trigger types: gps scalar, gps index, bluetooth
+
+GPS TRIGGERS require a serial gps device sending NMEA sentences
+the gps device address is in the xml config file
+
+gps scalar and index triggers reference geo-located bitmap overlays
+index triggers send a pre-deteremined message when an area is entered
+scalar triggers send a continually varying signal by interpolating greyscale values
+
+BLUETOOTH TRIGGERS are similar to index triggers but send a message when a
+known bluetooth device is encountered
+
+execute wim.py invoking a configfile to begin i.e.
+
+./wim.py gentconfig.xml
+
+open testwimpy.pd in pure data to see the results (if you don't have gps use wimpyGUI to test)
+
+=================================================================
+
+wim.py includes wimpyGUI - a system for simulating gps input during development.
+
+wimpyGUI is a processing program - http://processing.org
+
+wimpyGUI uses the same bitmaps and overlays as wim.py - copy them into the data folder
+
+wimpyGUI requires the hypermiedia.net UDP library from here: http://ubaa.net/shared/processing/udp/
+
+to use- open wimpyGUI.pde with processing
+press 0,1 or 2 to switch between bitmap overlays
+move the mouse to simulate gps input
+
+=================================================================
+
+wim.py was developed exclusively for circumstance - Tomorrow the ground forgets you were here
+
+http://productofcircumstance.com/portfoliocpt/tomorrow-the-ground-forgets-you-were-here/
+
+Bugs, issues, suggestions: tim@eclectronics.org
