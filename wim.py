@@ -33,7 +33,7 @@ import signal,sys
 
 def signal_handler(signal, frame):
         insock.close()
-        print "wim: tomorrowtheground: interrupted"
+        print "wim: interrupted"
         sys.exit(0)
         
 signal.signal(signal.SIGINT, signal_handler)
@@ -44,7 +44,7 @@ from xml2obj import *
 from logger import *
 
 if len(sys.argv)<2:
-	print "wim: usage: tomorrowtheground configfile [-D debug] [-L log] [-T test]"
+	print "usage: wim.py configfile [-D debug] [-L log] [-T test]"
 	sys.exit(0)
 
 Debug=False
