@@ -14,7 +14,7 @@ GPS TRIGGERS require a serial gps device sending NMEA sentences
 the gps device address is in the xml config file
 
 gps scalar and index triggers reference geo-located bitmap overlays
-index triggers send a pre-deteremined message when an area is entered
+index triggers send a pre-determined message when an area is entered
 scalar triggers send a continually varying signal by interpolating greyscale values
 
 BLUETOOTH TRIGGERS are similar to index triggers but send a message when a
