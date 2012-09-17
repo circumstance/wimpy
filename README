@@ -2,9 +2,7 @@ wim.py - gps / bluetooth listener communicates via UDP packets
 
 Copyright (C) 2012 Tim Redfern
 
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser
-General Public License as published by the Free Software Foundation; either version 2.1 of the License,
-or (at your option) any later version.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
 
 ================================================================
 
@@ -42,11 +40,11 @@ open testwimpy.pd in pure data to see the results (if you don't have gps use wim
 
 wim.py includes wimpyGUI - a system for simulating gps input during development.
 
-wimpyGUI is a processing program - http://processing.org
+wimpyGUI requires processing  - http://processing.org
 
 wimpyGUI uses the same bitmaps and overlays as wim.py - copy them into the data folder
 
-wimpyGUI requires the hypermiedia.net UDP library from here: http://ubaa.net/shared/processing/udp/
+wimpyGUI requires the hypermedia.net UDP library from here: http://ubaa.net/shared/processing/udp/
 
 to use- open wimpyGUI.pde with processing
 press 0,1 or 2 to switch between bitmap overlays
